@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pickbazar.css">
+    <title>PICKBAZAR</title>
+</head>
+<body>
+    <section id="cart">
+        <p><ion-icon name="bag-check"></ion-icon> <span id="count">0</span> items</p>
+        <aside>$<span id="cost">0.00</span></aside>
+    </section>
+    <nav>
+        <section id="logo">
+        <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F860%2FPickBazar.png&w=3840&q=75" alt="">
+        <select>
+            <option value="0">Grocery</option>
+            <option value="1">Bakery</option>
+            <option value="2">Makeup</option>
+            <option value="3">Bags</option>
+            <option value="4">Clothing</option>
+            <option value="5">Furniture</option>
+            <option value="6">Daily Needs</option>
+            <option value="7">Books</option>
+        </select>
+    </section>
+    <section id="list">
+        <ul>
+            <li>
+                <a href="">Shops</a>
+            </li>
+            <li>
+                <a href="">Offers</a>
+            </li>
+            <li>
+                <a href="">FAQ</a>
+            </li>
+            <li>
+                <a href="">Contact</a>
+            </li>
+            <li>
+                <button>Become a Seller</button>
+            </li>
+            <li>
+                <button>Join</button>
+            </li>
+        </ul>
+    </section>
+    </nav>
+    <main id="home">
+        <section>
+            <h1>Groceries Delivered in 90 Minutes</h1>
+            <p>Get your healthy foods & snacks delivered at your doorsteps all day everyday</p>
+            <article>
+                <input type="text" placeholder="Search your products from here">
+                <button><ion-icon name="search-outline"></ion-icon>Search</button>
+            </article>
+        </section>
+    </main>
+    <main id="sec">
+    <section id="second">
+        <article class="scard">
+            <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F902%2Foffer-5.png&w=3840&q=75" alt="">
+        </article>
+        <article class="scard">
+            <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F903%2Foffer-4.png&w=3840&q=75" alt="">
+        </article>
+        <article class="scard">
+            <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F904%2Foffer-3.png&w=3840&q=75" alt="">
+        </article>
+        <article class="scard">
+            <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F905%2Foffer-2.png&w=3840&q=75" alt="">
+        </article>
+        <article class="scard">
+            <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F906%2Foffer-1.png&w=3840&q=75" alt="">
+        </article>
+        
+    </section>
+    <button id="prev"><ion-icon name="chevron-back-outline"></ion-icon></button>
+        <button id="next"><ion-icon name="chevron-forward-outline"></ion-icon></button>
+    </main>
+    <main id="third">
+        <section id="ddmenu">
+           <select>
+            <option value="1">Fruits</option>
+            <option value="2">Vegetables</option>
+           </select>
+           <select>
+            <option value="1">Fresh Fish</option>
+            <option value="2">Meat</option>
+           </select>
+           <select>
+            <option value="1">Nuts & Biscuits</option>
+            <option value="2">Chocolates</option>
+            <option value="3">Crisps</option>
+            <option value="4">Noodles & Pasta</option>
+            <option value="5">Sauce</option>
+            <option value="6">Soup</option>
+           </select>
+           <select>
+            <option value="1">Cat Food</option>
+            <option value="2">Dog Food</option>
+            <option value="3">Accessories</option>
+           </select>
+           <select>
+            <option value="1">Air Freshner</option>
+            <option value="2">Cleaning Products</option>
+            <option value="3">Kitchen Accessories</option>
+            <option value="4">Laundry</option>
+           </select>
+           <select>
+            <option value="1">Milk</option>
+            <option value="2">Butter</option>
+            <option value="3">Egg</option>
+            <option value="4">Yogurt</option>
+           </select>
+           <select>
+            <option value="1">Oil</option>
+            <option value="2">Rice</option>
+            <option value="3">Salt & Sugar</option>
+            <option value="4">Spices</option>
+           </select>
+           <select>
+            <option value="1">Bread</option>
+            <option value="2">Cereal</option>
+            <option value="3">Jam</option>
+           </select>
+           <select>
+            <option value="1">Coffee</option>
+            <option value="2">Energy Drinks</option>
+            <option value="3">Juice</option>
+            <option value="4">Fizzy Drinks</option>
+            <option value="5">Tea</option>
+           </select>
+           <select>
+            <option value="1">Bath</option>
+            <option value="2">Cream</option>
+            <option value="3">Deodrant</option>
+            <option value="4">Face Care</option>
+            <option value="5">Oral Care</option>
+            <option value="6">Shaving Needs</option>
+           </select>
+        </section>
+        <section id="items">
+            <!-- <article id="apple">
+                 <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F1%2FApples.jpg&w=3840&q=75" alt=""> 
+                <h4 id="he4">$1.60</h4>
+                <p>Apples</p>
+                <aside>
+                    <button class="sub" onclick="sub()">-</button>
+                    <button class="add" onclick="add()"><span id="addt">Add</span></button>
+                    <button class="plus" onclick="add()">+</button>
+                </aside>
+            </article> -->
+            <!-- <article id="baby">
+                <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F2%2FBabySpinach.jpg&w=3840&q=75" alt=""> 
+                <h4>$0.60</h4>
+                <p>Baby Spinach</p>
+                <aside>
+                    <button class="sub" onclick="sub()">-</button>
+                    <button class="add" onclick="add()"><span id="addt">Add</span></button>
+                    <button class="plus" onclick="add()">+</button>
+                </aside>
+            </article> -->
+            <!-- <article id="blue">
+                <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F3%2Fblueberries.jpg&w=3840&q=75" alt=""> 
+                <h4>$3.00</h4>
+                <p>Bluberries</p>
+                <aside>
+                    <button class="sub" onclick="sub()">-</button>
+                    <button class="add" onclick="add()"><span id="addt">Add</span></button>
+                    <button class="plus" onclick="add()">+</button>
+                </aside></article> -->
+            <!-- <article id="brussels">
+                <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F4%2FBrusselsSprouts.jpg&w=3840&q=75" alt=""> 
+                <h4>$3.00</h4>
+                <p>Brussels Sprout</p>
+                <aside>
+                    <button class="sub" onclick="sub()">-</button>
+                    <button class="add" onclick="add()"><span id="addt">Add</span></button>
+                    <button class="plus" onclick="add()">+</button>
+                </aside>
+            </article> -->
+            <!-- <article id="clem">
+                <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F6%2Fclementines.jpg&w=3840&q=75" alt="">
+                <h4>$2.50</h4>
+                <p>Clementines</p>
+                <aside>
+                    <button class="sub" onclick="sub()">-</button>
+                    <button class="add" onclick="add()"><span id="addt">Add</span></button>
+                    <button class="plus" onclick="add()">+</button>
+                </aside>
+            </article> -->
+            <!-- <article id="sc">
+                <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F7%2FCorn.jpg&w=3840&q=75" alt=""> 
+                <h4>$4.00</h4>
+                <p>Sweet Corn</p>
+                <aside>
+                    <button class="sub" onclick="sub()">-</button>
+                    <button class="add" onclick="add()"><span id="addt">Add</span></button>
+                    <button class="plus" onclick="add()">+</button>
+                </aside></article> -->
+            <!-- <article id="cucu">
+                <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F8%2FCucumber.jpg&w=3840&q=75" alt=""> 
+                <h4>$2.50</h4>
+                <p>Cucumber</p>
+                <aside>
+                    <button class="sub" onclick="sub()">-</button>
+                    <button class="add" onclick="add()"><span id="addt">Add</span></button>
+                    <button class="plus" onclick="add()">+</button>
+                </aside></article> -->
+            <!-- <article id="dates">
+                 <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F10%2FDates.jpg&w=3840&q=75" alt=""> 
+                <h4>$8.00</h4>
+                <p>Dates</p>
+                <aside>
+                    <button class="sub" onclick="sub()">-</button>
+                    <button class="add" onclick="add()"><span id="addt">Add</span></button>
+                    <button class="plus" onclick="add()">+</button>
+                </aside></article> -->
+            <!-- <article>
+                <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F11%2FFrenchGreenBeans.jpg&w=3840&q=75" alt="">
+                <h4>$1.20</h4>
+                <p>Fresh Green Beans</p>
+                <aside>
+                    <button class="sub" onclick="sub()">-</button>
+                    <button class="add" onclick="add()"><span id="addt">Add</span></button>
+                    <button class="plus" onclick="add()">+</button>
+                </aside></article> -->
+            <!-- <article>
+                 <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F12%2FGreenBeans.jpg&w=3840&q=75" alt="">
+                <h4>$4.00</h4>
+                <p>Green Beans</p>
+                <aside>
+                    <button class="sub" onclick="sub()">-</button>
+                    <button class="add" onclick="add()"><span id="addt">Add</span></button>
+                    <button class="plus" onclick="add()">+</button>
+                </aside></article> -->
+            <!-- <article>
+                 <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F13%2FGreenLimes.jpg&w=3840&q=75" alt=""> 
+                <h4>$1.50</h4>
+                <p>Lime</p>
+                <aside>
+                    <button class="sub" onclick="sub()">-</button>
+                    <button class="add" onclick="add()"><span id="addt">Add</span></button>
+                    <button class="plus" onclick="add()">+</button>
+                </aside></article> -->
+            <!-- <article>
+                <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F14%2FMangoes.jpg&w=3840&q=75" alt=""> 
+                <h4>$2.50</h4>
+                <p>Mango</p>
+                <aside>
+                    <button class="sub" onclick="sub()">-</button>
+                    <button class="add" onclick="add()"><span id="addt">Add</span></button>
+                    <button class="plus" onclick="add()">+</button>
+                </aside>
+            </article> -->
+            <!-- <article>
+                 <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F15%2FMiniPeppers.jpg&w=3840&q=75" alt=""> 
+                <h4>$5.00</h4>
+                <p>Pepper</p>
+                <aside>
+                    <button class="sub" onclick="sub()">-</button>
+                    <button class="add" onclick="add()"><span id="addt">Add</span></button>
+                    <button class="plus" onclick="add()">+</button>
+                </aside>
+            </article> -->
+            <!-- <article>
+                 <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F16%2Fpears.jpg&w=3840&q=75" alt="">
+                <h4>$3.50</h4>
+                <p>Pears</p>
+                <aside>
+                    <button class="sub" onclick="sub()">-</button>
+                    <button class="add" onclick="add()"><span id="addt">Add</span></button>
+                    <button class="plus" onclick="add()">+</button>
+                </aside>
+            </article> -->
+            <!-- <article>
+                 <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F17%2FPeeled-Carrots.jpg&w=3840&q=75" alt=""> 
+                <h4>$2.20</h4>
+                <p>Peeled Baby Carrot</p>
+                <aside>
+                    <button class="sub" onclick="sub()">-</button>
+                    <button class="add" onclick="add()"><span id="addt">Add</span></button>
+                    <button class="plus" onclick="add()">+</button>
+                </aside>
+            </article> -->
+            <!-- <article>
+                <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F18%2FRedCherries.jpg&w=3840&q=75" alt=""> 
+                <h4>$1.80</h4>
+                <p>Cherry</p>
+                <aside>
+                    <button class="sub" onclick="sub()">-</button>
+                    <button class="add" onclick="add()"><span id="addt">Add</span></button>
+                    <button class="plus" onclick="add()">+</button>
+                </aside>
+            </article> -->
+            <!-- <article>
+                 <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F19%2Fstrawberry.jpg&w=3840&q=75" alt=""> 
+                <h4>$8.00</h4>
+                <p>Strawberry</p>
+                <aside>
+                    <button class="sub" onclick="sub()">-</button>
+                    <button class="add" onclick="add()"><span id="addt">Add</span></button>
+                    <button class="plus" onclick="add()">+</button>
+                </aside>
+            </article> -->
+            <!-- <article>
+            <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F20%2FVeggiePlatter.jpg&w=3840&q=75" alt=""> 
+                <h4>$3.20</h4>
+                <p>Mix Vegetable Platter</p>
+                <aside>
+                    <button class="sub" onclick="sub()">-</button>
+                    <button class="add" onclick="add()"><span id="addt">Add</span></button>
+                    <button class="plus" onclick="add()">+</button>
+                </aside>
+            </article> -->
+            <!-- <article>
+                <img src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F21%2FYellow-Limes.jpg&w=3840&q=75" alt=""> 
+                <h4>$1.20</h4>
+                <p>Lemon</p>
+                <aside>
+                    <button class="sub" onclick="sub()">-</button>
+                    <button class="add" onclick="add()"><span id="addt">Add</span></button>
+                    <button class="plus" onclick="add()">+</button>
+                </aside></article> -->
+        </section>
+    </main>
+    <footer>
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="search-outline"></ion-icon>
+        <ion-icon name="home-outline"></ion-icon>
+        <ion-icon name="bag-handle-outline"></ion-icon>
+        <ion-icon name="person-outline"></ion-icon>
+    </footer>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="pickbazar.js"></script>
+</html>

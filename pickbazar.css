@@ -1,0 +1,544 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-family: sans-serif;
+}
+#cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 7%;
+    height: 18vh;
+    border-radius: 5px;
+    position: fixed;
+    right: 0;
+    top: 43vh;
+    z-index: 2;
+    background-color:rgb(63, 157, 122);
+}
+#cart p{
+    color: white;
+}
+#cart aside{
+    background-color: white;
+    padding: .5rem;
+    width: 70%;
+    border-radius: 5px;
+    text-align: center;
+    color:rgb(63, 157, 122);
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    top: 0;
+    z-index: 1;
+    padding: 1.4rem;
+    background-color: rgb(250, 250, 250);
+}
+#logo{
+    width: 29%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+nav select{
+    width: 40%;
+    height: 7.5vh;
+    border-radius: 6px;
+    text-align: center;
+    border: .5px solid rgb(225, 225, 225);
+    font-size: 1rem;
+    color:rgb(63, 157, 122);
+    outline: none;
+}
+#list{
+    width: 42%;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li a{
+    color: rgb(82, 82, 82);
+    text-decoration: none;
+}
+nav section img{
+    width: 45%;
+}
+nav button{
+    background-color:rgb(63, 157, 122);
+    padding-left: .75rem;
+    padding-right: .75rem;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+}
+#home{
+    background-image: url(https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F904%2Fgrocery.png&w=3840&q=75);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home section{
+    width: 70%;
+    height: 38vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 35vh;
+}
+#home h1{
+    font-size: 2.8rem;
+    color: rgb(30, 30, 30);
+}
+#home p{
+    font-size: 1.2rem;
+    color: rgb(85, 84, 84);
+    font-weight: lighter;
+}
+#home article{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#home input{
+    width: 80%;
+    padding: 1.25rem;
+    border: none;
+    font-size: .9rem;
+    outline: none;
+}
+#home button{
+    width: 20%;
+    padding: 1.1rem;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    background-color: rgb(63, 157, 122);
+}
+#sec{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+#second{
+    display: flex;
+    scroll-padding: 25px;
+    column-gap: 20px;
+    padding:2rem;
+}
+.scard{
+    flex: 0 0 33%;
+    cursor: pointer;
+}
+.scard img{
+    width: 100%;
+    height: 100%;
+}
+#prev{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 20vh;
+    left: 1rem;
+    display: none;
+}
+#next{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 20vh;
+    right: .5rem;
+}
+#third{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(244, 244, 244);
+    box-shadow: 0 0 1px 1px rgb(226, 226, 226);
+}
+#ddmenu{
+    width: 18.5%;
+    height: 85vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center ;
+    position: sticky;
+    top: 15vh;
+}
+#ddmenu select{
+    border: none;
+    width: 95%;
+    outline: none;
+}
+#items{
+    width: 81.5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: .8rem;
+    row-gap: .8rem;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 2rem;
+}
+/* #items article{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px rgb(226, 226, 226);
+}
+#items article:hover{
+    transform: translateY(-2px);
+}
+#items article h4{
+    width: 77%;
+    text-align: left;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 600;
+}
+#items article p{
+    width: 77%;
+    text-align: left;
+    color: grey;
+    padding-bottom: 1rem;
+    font-weight: lighter;
+} */
+/* #items article img{
+    width: 90%;
+    padding: 1rem;
+} */
+.cardimg{
+    width: 90%;
+    padding: 1rem;
+}
+.card 
+    {
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: space-evenly;
+        border-radius: 5px;
+        box-shadow: 0 0 1px 1px rgb(226, 226, 226);
+        padding: 2rem;
+    }
+.card:hover{
+    transform: translateY(-.3rem);
+}    
+.bdiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.addb{
+    width: 83%;
+    height: 2.4rem;
+    border: none;
+    background-color: rgb(249, 249, 249);
+}
+
+.itemname{
+    padding: 1rem;
+    padding-top: 0;
+    color: grey;
+}
+.itemcost{
+    padding: 1rem;
+}
+.plusb{
+    width: 17%;
+    height: 2.4rem;
+    font-size: 1.3rem;
+    border: none;
+}
+.minb{
+    width: 17%;
+    height: 2.4rem;
+    font-size: 1.3rem;
+    border: none;
+    display: none;
+}
+.bdiv:hover .addb{
+    background-color: rgb(63, 157, 122);
+    color: white;
+}
+.bdiv:hover .plusb{
+    background-color: rgb(52, 131, 102);
+    color: white;
+}
+.bdiv:hover .minb{
+    background-color: rgb(52, 131, 102);
+    color: white;
+}
+/* #items article aside{
+    width: 67%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#items article aside:hover button{
+    background-color: rgb(63, 157, 122);
+    color: white;
+    transition: .5s;
+}
+#items article aside:hover .plus{
+    background-color: rgb(56, 138, 108);
+    color: white;
+    transition: .5s;
+}
+.add{
+    width: 80%;
+    padding: .65rem;
+    border: none;
+    background-color: rgb(246, 244, 244);
+}
+.plus{
+    width: 10%;
+    border: none;
+    padding: .65rem 1.65rem .65rem 1rem;
+    text-align: center;
+} */
+footer{
+    display: none;
+}
+.sub{
+    width: 10%;
+    border: none;
+    padding: .65rem 1.65rem .65rem 1rem;
+    text-align: center;
+    display: none;
+}
+
+@media screen and (min-width:1440px) {
+    #home{
+        background-size: 1440px;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1239px) {
+    nav select{
+        display:none;
+    }
+    #list{
+        width: 50%;
+    }
+    #logo {
+        width: 17%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    #home{
+        background-size: 1024px;
+    }
+    #home section{
+        width: 85%;
+    }
+    #home h1{
+        font-size: 2.1rem;;
+    }
+    #home p{
+        font-size: 1rem;
+    }
+    #ddmenu{
+        display: none;
+    }
+    #items{
+        width: 100%;
+    }
+    #items article{
+        height: 90vh;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    #list{
+        display: none;
+    }
+    nav select{
+        display: none;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 1px 1px rgb(226, 226, 226)
+    }
+    #logo{
+        width: 22%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    #home{
+        display: none;
+    }
+    #second{
+        background-color: white;
+        position: absolute;
+        top: 14vh;
+        padding: 2rem;
+        height: 50vh;
+    }
+    .card{
+        flex: 0 0 50%;
+    }
+    #third{
+        position: absolute;
+        top: 65vh;
+    }
+    #ddmenu{
+        display: none;
+    }
+    #items{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+       padding-bottom: 4rem; 
+    }
+    #items article{
+        width: 48%;
+        height: 95vh;
+    }
+    footer{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+        position: fixed;
+        z-index: 2;
+        background-color: white;
+        bottom: 0;
+    }
+}
+@media screen and (min-width:320px) and (max-width:767px) {
+    #list{
+        display: none;
+    }
+    nav select{
+        display: none;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 1px 1px rgb(226, 226, 226)
+    }
+    #logo{
+        width: 50%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    #home{
+        display: none;
+    }
+    #second{
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 12vh;
+        padding: 2rem;
+    }
+    .card{
+        flex: 0 0 100%;
+    }
+
+#third{
+    position: absolute;
+    top: 65vh;
+}
+#ddmenu{
+    display: none;
+}
+#items{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+   padding-bottom: 4rem; 
+}
+#items article{
+    width: 98%;
+    height: 90vh;
+}
+#items article img{
+    padding: 2rem;
+}
+#items article h4{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+#items article p{
+    padding-bottom: .5rem;
+}
+#items article aside{
+    padding-bottom: 2rem;
+}
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    position: fixed;
+    z-index: 2;
+    background-color: white;
+    bottom: 0;
+
+}
+}
